@@ -1,0 +1,31 @@
+.summary {
+  position: relative;
+  z-index: 10;
+
+  width: 90%;
+  max-width: 45rem;
+
+  margin: -10rem auto 0;
+  padding: 2rem;
+
+  background-color: #242424;
+  color: white;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.summary h2 {
+    color:white;
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+}
+
+.summary p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}

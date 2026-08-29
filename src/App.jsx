@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import Header from "./components/Layout/Header";
+import MealsSummary from "./components/Meals/MealsSummary";
 
 function App() {
   const [cartItems] = useState([]);
@@ -8,9 +9,7 @@ function App() {
     <div>
       <Header cartItemCount={cartItems.length} />
 
-      <main>
-        <h2>Delicious Meals</h2>
-      </main>
+      <MealsSummary />
     </div>
   );
 }
