@@ -1,16 +1,17 @@
-import  { useState } from "react";
+import  { Fragment } from "react";
 import Header from "./components/Layout/Header";
-import MealsSummary from "./components/Meals/MealsSummary";
+import Meals from "./components/Meals/Meals";
+import "./App.css";
 
 function App() {
-  const [cartItems] = useState([]);
+
 
   return (
-    <div>
-      <Header cartItemCount={cartItems.length} />
+    <Fragment>
+      <Header />
 
-      <MealsSummary />
-    </div>
+      <Meals />
+    </Fragment>
   );
 }
 
