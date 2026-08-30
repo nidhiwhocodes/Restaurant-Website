@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import mealsImage from "../../assets/meals.png";
+import HeaderCartButton from "./HeaderCartButton";
 
 
 const Header = (props) => {
@@ -9,12 +10,13 @@ const Header = (props) => {
       <header className="header">
         <div className="header-content">
           <h1>ReactMeals</h1>
+          <HeaderCartButton onClick={props.onShowCart} cartItemCount={props.cartItemCount} />
 
-          <button className="cart-button" onClick={props.onShowCart}>
+          {/* <button className="cart-button" onClick={props.onShowCart}>
             <span className="cart-icon">🛒</span>
             <span>Your Cart</span>
             <span className="cart-badge">{props.cartItemCount || 0}</span>
-          </button>
+          </button> */}
         </div>
       </header>
 
